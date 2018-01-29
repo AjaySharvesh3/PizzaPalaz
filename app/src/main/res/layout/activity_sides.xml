@@ -1,0 +1,244 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/iphone"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.example.ajaysharvesh.firebase.Sides" >
+
+    <ScrollView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="16dp"
+                android:text="enter code here"
+                android:textAllCaps="true"
+                android:textColor="#fff"
+                android:textStyle="bold" />
+
+            <EditText
+                android:id="@+id/txtCustomerName"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/bottom_style"
+                android:drawableLeft="@drawable/ic_action_code"
+                android:hint="@string/code"
+                android:textColor="#fff"
+                android:textColorHint="#fff" />
+
+            <LinearLayout
+                android:id="@+id/s1"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:paddingBottom="12dp"
+                android:paddingRight="12dp"
+                android:paddingTop="12dp">
+
+                <ImageView
+                    android:id="@+id/mar"
+                    android:layout_width="90dp"
+                    android:layout_height="90dp"
+                    android:paddingBottom="12dp"
+                    android:paddingRight="12dp"
+                    android:paddingTop="12dp"
+                    android:src="@drawable/g1" />
+
+                <TextView
+                    android:id="@+id/g1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="20dp"
+                    android:text="NAME: Garlic Bread --- CODE: SP1 "
+                    android:textColor="#fff"
+                    android:textSize="15dp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/c1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="20dp"
+                    android:text="Code :"
+                    android:textAllCaps="true"
+                    android:textColor="#fff"
+                    android:textSize="15dp"
+                    android:textStyle="bold" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/s2"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal"
+                android:paddingBottom="12dp"
+                android:paddingRight="12dp"
+                android:paddingTop="12dp">
+
+                <ImageView
+                    android:id="@+id/mar1"
+                    android:layout_width="90dp"
+                    android:layout_height="90dp"
+                    android:paddingBottom="12dp"
+                    android:paddingRight="12dp"
+                    android:paddingTop="12dp"
+                    android:src="@drawable/g2" />
+
+                <TextView
+                    android:id="@+id/g2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="20dp"
+                    android:text="NAME: Stuffed Garlic Bread --- CODE: SP2"
+                    android:textColor="#fff"
+                    android:textSize="15dp"
+                    android:textStyle="bold" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/s3"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal"
+                android:paddingBottom="12dp"
+                android:paddingRight="12dp"
+                android:paddingTop="12dp">
+
+                <ImageView
+                    android:id="@+id/mar3"
+                    android:layout_width="90dp"
+                    android:layout_height="90dp"
+                    android:paddingBottom="12dp"
+                    android:paddingRight="12dp"
+                    android:paddingTop="12dp"
+                    android:src="@drawable/g3" />
+
+                <TextView
+                    android:id="@+id/g3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="20dp"
+                    android:text="NAME: Meat Samajh --- CODE: SP3"
+                    android:textColor="#fff"
+                    android:textSize="15dp"
+                    android:textStyle="bold" />
+
+            </LinearLayout>
+
+            <TextView
+                style="@style/HeaderTextStyle"
+                android:layout_width="wrap_content"
+                android:layout_height="46dp"
+                android:text="@string/toppings"
+                android:textColor="#fff"
+                android:textStyle="bold" />
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <CheckBox
+                    android:id="@+id/hasWhippedCream"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="24dp" />
+
+                <TextView
+                    android:id="@+id/textView"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/whipped_cream"
+                    android:textColor="#fff" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <CheckBox
+                    android:id="@+id/hasChocolate"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="24dp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/chocolate"
+                    android:textColor="#fff" />
+            </LinearLayout>
+
+
+            <TextView
+                style="@style/HeaderTextStyle"
+                android:text="@string/quantity"
+                android:textColor="#fff" />
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:orientation="horizontal">
+
+                <Button
+                    android:layout_width="128dp"
+                    android:layout_height="48dp"
+                    android:layout_gravity="center"
+                    android:background="@drawable/button_style"
+                    android:onClick="decrement"
+                    android:text="-"
+                    android:textColor="#fff"
+                    android:textStyle="bold" />
+
+
+                <TextView
+                    android:id="@+id/quantity_text_view"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="16dp"
+                    android:padding="8dp"
+                    android:text="0"
+                    android:textColor="#fff"
+                    android:textSize="16sp" />
+
+                <Button
+                    android:layout_width="128dp"
+                    android:layout_height="48dp"
+                    android:background="@drawable/button_style"
+                    android:onClick="increment"
+                    android:text="+"
+                    android:textColor="#fff"
+                    android:textStyle="bold" />
+
+            </LinearLayout>
+
+
+            <Button
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:background="@drawable/button_style"
+                android:onClick="submitOrder"
+                android:text="@string/order"
+                android:textAllCaps="true"
+                android:textColor="#fff"
+                android:textStyle="bold" />
+
+
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>
